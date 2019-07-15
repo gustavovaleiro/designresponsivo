@@ -10,16 +10,18 @@
 </head>
 <body>
     <header class = "cabecalho">
-        <h1 class = "logo">Gustavo Valeiro</h1>
-        <nav class = "menu-principal">
-            <button class = "menu-principal__btn">Abrir/fechar menu</button>
-            <ul class = "menu-principal__lista">
-                <li><a class = "menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
-                <li><a class = "menu-principal__item" href="sobre.html">Sobre nós</a> </li>
-                <li><a class = "menu-principal__item" href="portfolio.html">Portfolio</a></li>
-                <li><a class = "menu-principal__item" href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class = "logo">Gustavo Valeiro</h1>
+            <nav class = "menu-principal">
+                <button class = "menu-principal__btn">Abrir/fechar menu</button>
+                <ul class = "menu-principal__lista">
+                    <li><a class = "menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                    <li><a class = "menu-principal__item" href="sobre.html">Sobre nós</a> </li>
+                    <li><a class = "menu-principal__item" href="portfolio.html">Portfolio</a></li>
+                    <li><a class = "menu-principal__item" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
        <header>
@@ -27,54 +29,62 @@
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos non nam natus ab? Repellat, provident, dolorem sunt ipsam a architecto ullam doloribus delectus soluta perferendis temporibus, cum laboriosam sequi!</p>
             <a href="#servicos">role para ver mais</a>
         </header>
-        <section id="servicos">
-            <h2>O que fazemos</h2>
-            <section>
-                <img src="img/icone-desenvolvimento-web.png" alt="icone planeta terra">
-                <h3>Desenvolvimento WEB</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto illo odio ratione eum ullam alias at cumque animi praesentium obcaecati harum nihil iure quas dolores, beatae ex soluta recusandae!</p>
-            </section>
-            <section>
-                <img src="img/icone-carrinho-compras.png" alt="icone carrinho de compras">
-                <h3>E-commerce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto illo odio ratione eum ullam alias at cumque animi praesentium obcaecati harum nihil iure quas dolores, beatae ex soluta recusandae!</p>
-            </section>
-            <section>
-                    <img src="img/icone-cafe.png" alt="icone chicara de café">
-                    <h3>Café</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique iusto illo odio ratione eum ullam alias at cumque animi praesentium obcaecati harum nihil iure quas dolores, beatae ex soluta recusandae!</p>
+        <section id="servicos" class="servicos"><!-- Seção serviços -->
+            <div class="container">
+                <h2 class="home__titulo">O que fazemos</h2>
+                <section class="servicos__item">
+                    <img src="img/icone-desenvolvimento-web.png" alt="Ícone planeta terra">
+                    <h3>Desenvolvimento Web</h3>
+                    <p class="servicos__texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus interdum ex a nunc fermentum congue. Aliquam dignissim pulvinar arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. </p>
                 </section>
-        </section>
-        <section>
-            <h2>O que falam de nós</h2>
-            <img src="img/depoimentos/pessoa-1.jpg" alt="foto da pessoa que deu o depoimento">
-            <p>Depoimento Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae accusamus doloremque voluptas nam assumenda? Voluptate cupiditate facilis provident esse assumenda est, maiores eveniet, obcaecati consectetur aspernatur quidem recusandae autem.</p>
-            <p>Nome da Pessoa Que deu depoimento</p>
-        </section>
+                <section class="servicos__item">
+                    <img src="img/icone-carrinho-compras.png" alt="Ícone carrinho de compras">
+                    <h3>E-commerce</h3>
+                    <p class="servicos__texto">In hac habitasse platea dictumst. Proin ut pellentesque mauris. Nunc in varius justo. Phasellus vulputate ut neque non auctor. Fusce vitae urna egestas, finibus ante non, laoreet nunc.</p>
+                </section>
+                <section class="servicos__item">
+                    <img src="img/icone-cafe.png" alt="Ícone xícara de café">
+                    <h3>Café</h3>
+                    <p class="servicos__texto">Aliquam ac lorem sapien. Nullam suscipit purus vel erat aliquam scelerisque. Aenean sed turpis a nibh laoreet iaculis a et nulla. Aenean at felis ex. Nulla ut dui aliquet, fermentum massa vitae, accumsan erat.</p>
+                </section>
+            </div> <!-- fim container -->
+        </section><!-- fim Seção serviços -->
+        <section class="depoimentos"> <!-- seção depoimentos -->
+            <div class="container">
+                <h2 class="home__titulo home__titulo--branco">O que falam de nós</h2>
+                <div class="depoimentos__caixa">
+                    <section class="depoimentos__item">
+                        <img class="depoimentos__img" src="img/depoimentos/pessoa-1.jpg" alt="Foto da pessoa x">
+                        <p class="depoimentos__texto">hasellus dapibus sapien et est blandit, ornare interdum arcu iaculis. Vestibulum placerat ex sit amet erat mattis bibendum. Mauris non mi augue.</p>
+                        <p class="depoimentos__pessoa">Nome Pessoa - Cargo</p>
+                    </section>
+                </div> <!-- depoimentos__caixa -->
     </main>
     <footer class = "rodape">
         <div class = "rodape__linha1">
-            <div class = "rodape__coluna">
-                <a href="index.html" class = "logo logo--branco">Gustavo Valeiro</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laborum minus debitis ad doloremque distinctio alias tenetur officiis expedita, fugiat ducimus iusto quod, dicta vel nostrum repellendus assumenda aliquid qui.</p>
-            </div>
-            <div class = "rodape__coluna">
-                <h2 class = "rodape__titulo">Social</h2>
-                <ul class = "rodape__lista-links">
-                    <li><a class = "rodape__lista-links__item" href="https://twitter.com" target = "_blank">Twitter</a></li>
-                    <li><a class = "rodape__lista-links__item" href="https://facebook.com" target = "_blank">Facebook</a></li>
-                    <li><a class = "rodape__lista-links__item" href="https://instagram.com" target = "_blank">Instagram</a></li>
-                    <li><a class = "rodape__lista-links__item" href="https://youtube.com" target = "_blank">Youtube</a></li>
-                </ul>
-            </div>
-            <div class = "rodape__coluna">
-                <h2 class = "rodape__titulo">Links</h2>
-                <ul class = "rodape__lista-links">
-                    <li><a class = "rodape__lista-links__item" href="index.html">Home</a></li>
-                    <li><a class = "rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
-                    <li><a class = "rodape__lista-links__item" href="portfolio.html">Portfolio</a></li>
-                    <li><a class = "rodape__lista-links__item" href="contato.html">Contato</a> </li>
-                </ul>
+            <div class="container">
+                <div class = "rodape__coluna">
+                    <a href="index.html" class = "logo logo--branco">Gustavo Valeiro</a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex laborum minus debitis ad doloremque distinctio alias tenetur officiis expedita, fugiat ducimus iusto quod, dicta vel nostrum repellendus assumenda aliquid qui.</p>
+                </div>
+                <div class = "rodape__coluna">
+                    <h2 class = "rodape__titulo">Social</h2>
+                    <ul class = "rodape__lista-links">
+                        <li><a class = "rodape__lista-links__item" href="https://twitter.com" target = "_blank">Twitter</a></li>
+                        <li><a class = "rodape__lista-links__item" href="https://facebook.com" target = "_blank">Facebook</a></li>
+                        <li><a class = "rodape__lista-links__item" href="https://instagram.com" target = "_blank">Instagram</a></li>
+                        <li><a class = "rodape__lista-links__item" href="https://youtube.com" target = "_blank">Youtube</a></li>
+                    </ul>
+                </div>
+                <div class = "rodape__coluna">
+                    <h2 class = "rodape__titulo">Links</h2>
+                    <ul class = "rodape__lista-links">
+                        <li><a class = "rodape__lista-links__item" href="index.html">Home</a></li>
+                        <li><a class = "rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                        <li><a class = "rodape__lista-links__item" href="portfolio.html">Portfolio</a></li>
+                        <li><a class = "rodape__lista-links__item" href="contato.html">Contato</a> </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class = "rodape__linha2">
