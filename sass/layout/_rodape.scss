@@ -1,0 +1,45 @@
+.rodape{
+  color: white;
+  &__linha1{
+    background-color: #272525;
+    background-image: url("../img/rodape-bg.jpg");
+    background-size: cover;
+    padding: 15px;
+  }
+  &__linha2{
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+  }
+
+  &__titulo{
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+  }
+  &__lista{
+    &-links{
+      padding: 0px;
+      list-style: none;
+      &__item{
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 10px;
+        &::before{
+          content: ">";
+          margin-right: 8px;
+          color: $cor-principal;
+        }
+
+      }
+    }
+  }
+  .logo{
+    margin-bottom: 25px;
+  }
+  &__coluna {
+    margin-top: 40px;
+    margin-bottom: 40px
+  }
+}
