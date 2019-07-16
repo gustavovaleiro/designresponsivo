@@ -1,4 +1,5 @@
 @import 'abstracts/_cores';
+@import 'abstracts/breakpoints';
 
 @import 'base/_normalize';
 @import 'base/_fontes';
@@ -18,6 +19,7 @@
 @import 'components/_pagina-cabecalho';
 @import 'components/_pagina-conteudo';
 @import 'components/_servicos';
+
 
 @import 'pages/_contato';
 @import 'pages/_pagina-inicial';

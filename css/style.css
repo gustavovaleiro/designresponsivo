@@ -331,10 +331,24 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+  @media (min-width: 567px) {
+    .container {
+      width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px; } }
 
 .cabecalho {
+  width: 100%;
   background: white;
-  padding: 15px; }
+  padding: 15px;
+  position: fixed; }
 
 .rodape {
   color: white; }
@@ -531,6 +545,9 @@ body {
     margin-bottom: 0; }
   .cabecalho-home__role {
     display: none; }
+  @media (min-width: 992px) {
+    .cabecalho-home {
+      height: 100vh; } }
 
 .home__titulo {
   text-align: center;

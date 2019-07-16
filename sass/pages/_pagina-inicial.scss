@@ -12,7 +12,12 @@
     &__role{
         display: none;
     }
+
+    @media(min-width: $breakpoint-lg){
+        height: 100vh;
+    }
 }
+
 
 
 .home__titulo{
